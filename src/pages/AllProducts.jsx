@@ -39,7 +39,7 @@ function AllProducts() {
             {products.map((oneProduct) =>
                 <div key={oneProduct._id}>
                     <p>{oneProduct.title}</p>
-                    <Link to={`/products/${oneProduct._id}`}>See Product Details</Link>
+                    <Link to={`/products/${oneProduct._id}`} id='Link'>See Product Details</Link>
 
                 </div>
             )}

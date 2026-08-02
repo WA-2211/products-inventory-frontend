@@ -43,6 +43,7 @@ function CreateProduct() {
                 <label htmlFor="category">Category:</label>
 
                 <select name="category" id="category" onChange={handleChange} value={formData.category}>
+                    <option value="">select category</option>
                     <option value="electronics">electronics</option>
                     <option value="food">food</option>
                     <option value="clothing">clothing</option>
@@ -56,7 +57,7 @@ function CreateProduct() {
                 <label htmlFor="quantity">Quantity:</label>
                 <input type="number" name='quantity' id='quantity' onChange={handleChange} value={formData.quantity}/>
 
-                <button>Create New Product</button>
+                <button className='btn'>Create New Product</button>
 
             </form>
         </div>

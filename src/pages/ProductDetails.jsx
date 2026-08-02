@@ -57,8 +57,8 @@ function ProductDetails() {
                     <p>Price: {product.price}</p>
                     <p>Quantity: {product.quantity}</p>
 
-                    <button onClick={handleDelete}>Delete Product</button>
-                    <button onClick={() => {
+                    <button onClick={handleDelete} className='btn'>Delete Product</button>
+                    <button className='btn' onClick={() => {
                         navigate(`/products/${product._id}/edit`)
                     }}>Update Product</button>
 

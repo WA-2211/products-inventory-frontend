@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -11,8 +13,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: "Titan One", 'Segoe UI', Roboto, sans-serif;
+  --heading: "Titan One", 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -51,7 +53,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  background-color: #fdf3cb;
 }
 
 #root {
@@ -75,24 +78,38 @@ h2 {
 
 h1 {
   font-size: 56px;
+  color: #fdf3cb;
+  text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.9);
+
   letter-spacing: -1.68px;
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
-p {
+
+p, 
+form label {
   margin: 0;
+  color: lightcyan;
+  -webkit-text-stroke: 0.5px #432F2E;
+  font-size: larger;
+  padding: 8px;
+  margin-bottom: 5px;
+
 }
 
 code,
@@ -111,6 +128,46 @@ code {
 }
 
 
-nav a{
+nav {
+  background-color: #C1DBE8;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+nav a {
   margin-right: 8px;
+  text-decoration: none;
+  color: #C1DBE8;
+  -webkit-text-stroke: 1px lightcyan;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+#Link {
+  text-decoration: none;
+  color: #432F2E;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#Link:hover {
+  text-decoration:underline;
+}
+
+.btn{
+  background-color: #432F2E;
+  border: 3px solid lightcyan;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
+  color: lightcyan;
+  font-family: 'titan one';
+  -webkit-text-stroke: 0.5px #432F2E;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #231818;
 }

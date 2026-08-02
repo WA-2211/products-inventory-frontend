@@ -71,7 +71,7 @@ function UpdateProduct() {
                 <label htmlFor="quantity">Quantity:</label>
                 <input type="number" name='quantity' id='quantity' onChange={handleChange} value={formData.quantity}/>
 
-                <button>Update Product</button>
+                <button className='btn'>Update Product</button>
 
             </form>
     </div>
